@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran App</title>
+
+    <link rel="stylesheet" href="surah.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="developer-name">
+        Developed by Muhammad Asadullah
+    </div>
+    <!-- Header -->
+    <header>
+
+        <button id="backBtn">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back
+        </button>
+
+        <div class="title">
+
+            <h1 id="surahEnglish">Loading...</h1>
+
+            <h2 id="surahArabic"></h2>
+
+            <p id="surahInfo"></p>
+
+
+            <button id="favoriteSurahBtn">🤍 Favorite Surah</button>
+        </div>
+
+        <button id="themeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+    </header>
+
+    <!-- Controls -->
+    <section class="controls">
+
+        <button id="prevSurah">
+            <i class="fa-solid fa-chevron-left"></i>
+            Previous
+        </button>
+
+        <button id="playAudio">
+            <i class="fa-solid fa-play"></i>
+            Play Audio
+        </button>
+
+        <button id="nextSurah">
+            Next
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </section>
+
+    <!-- Audio -->
+    <audio id="audioPlayer" controls style="display:none;"></audio>
+
+    <!-- Ayahs -->
+    <main id="ayahContainer">
+
+        <!-- JavaScript will insert ayahs here -->
+
+    </main>
+
+    <!-- Loading -->
+    <div id="loading">
+
+        <div class="spinner"></div>
+
+        <p>Loading Surah...</p>
+
+    </div>
+    <script src="surah.js"></script>
+</body>
+
+</html>
